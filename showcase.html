@@ -449,82 +449,6 @@
       display: none;
     }
 
-    /* PREMIUM */
-    .premium-wrap {
-      background: var(--card);
-      border: 1px solid var(--border);
-      border-radius: 32px;
-      overflow: hidden;
-      margin-top: 56px;
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-    }
-    .premium-info { padding: 48px; }
-    .premium-info .section-title { margin-bottom: 24px; }
-    .premium-perks { list-style: none; margin-bottom: 32px; }
-    .premium-perks li {
-      display: flex;
-      align-items: center;
-      gap: 12px;
-      padding: 10px 0;
-      font-size: 0.95rem;
-      border-bottom: 1px solid var(--border);
-    }
-    .premium-perks li:last-child { border-bottom: none; }
-    .perk-icon {
-      width: 28px; height: 28px;
-      border-radius: 8px;
-      background: rgba(200,80,249,0.12);
-      display: flex; align-items: center; justify-content: center;
-      font-size: 0.9rem;
-      flex-shrink: 0;
-    }
-    .perk-text { color: var(--muted); }
-    .perk-text strong { color: var(--text); }
-    .price-tag {
-      display: inline-flex;
-      align-items: baseline;
-      gap: 4px;
-      margin-bottom: 20px;
-    }
-    .price-tag .amount {
-      font-size: 2.8rem;
-      font-weight: 900;
-      background: var(--grad);
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-      background-clip: text;
-    }
-    .price-tag .period { color: var(--muted); font-size: 1rem; }
-    .premium-visual {
-      background: linear-gradient(135deg, rgba(200,80,249,0.12), rgba(77,166,255,0.08));
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      padding: 48px;
-      gap: 16px;
-      border-left: 1px solid var(--border);
-    }
-    .premium-badge {
-      display: inline-flex;
-      align-items: center;
-      gap: 8px;
-      background: var(--grad2);
-      color: #fff;
-      padding: 8px 20px;
-      border-radius: 50px;
-      font-weight: 700;
-      font-size: 0.9rem;
-    }
-    .premium-features-list { list-style: none; text-align: left; }
-    .premium-features-list li {
-      padding: 8px 0;
-      font-size: 0.9rem;
-      color: var(--muted);
-    }
-    .premium-features-list li::before { content: '✦ '; color: var(--purple); }
-
     /* SAFETY */
     .safety-grid {
       display: grid;
@@ -608,9 +532,7 @@
       .nav-links { display: none; }
       .feature-card.big { grid-column: span 1; flex-direction: column; }
       .feature-card.big .feature-visual { width: 100%; }
-      .premium-wrap { grid-template-columns: 1fr; }
-      .premium-visual { border-left: none; border-top: 1px solid var(--border); }
-      .phone.tilt-left, .phone.tilt-right { transform: none; }
+.phone.tilt-left, .phone.tilt-right { transform: none; }
       footer { flex-direction: column; align-items: flex-start; }
       .steps { grid-template-columns: 1fr; }
     }
@@ -629,7 +551,6 @@
   <div class="nav-links">
     <a href="#features">Features</a>
     <a href="#how">How it works</a>
-    <a href="#premium">Premium</a>
     <a href="#safety">Safety</a>
     <a href="https://canduki21.github.io/Hangear-Support/privacy.html" class="nav-cta">Privacy Policy</a>
   </div>
@@ -805,51 +726,6 @@
       <div class="step-num">3</div>
       <div class="step-title">Connect & show up</div>
       <p class="step-desc">Chat with your group, coordinate the details, and enjoy the hangout. Leave a review when it's done.</p>
-    </div>
-  </div>
-</section>
-
-<!-- PREMIUM -->
-<section id="premium">
-  <span class="section-label">Premium</span>
-  <h2 class="section-title">Unlock the full<br>Hangear experience</h2>
-  <p class="section-sub">Go further with Hangear Premium — more events, more reach, more visibility.</p>
-
-  <div class="premium-wrap">
-    <div class="premium-info">
-      <div class="price-tag">
-        <span class="amount">$4.99</span>
-        <span class="period">/ month</span>
-      </div>
-      <ul class="premium-perks">
-        <li>
-          <span class="perk-icon">🌍</span>
-          <span class="perk-text"><strong>Worldwide reach</strong> — join events beyond your city</span>
-        </li>
-        <li>
-          <span class="perk-icon">♾</span>
-          <span class="perk-text"><strong>Unlimited events</strong> — vs. 4/month on the free plan</span>
-        </li>
-        <li>
-          <span class="perk-icon">⚡</span>
-          <span class="perk-text"><strong>Priority requests</strong> — your join request stands out to hosts</span>
-        </li>
-        <li>
-          <span class="perk-icon">🏅</span>
-          <span class="perk-text"><strong>Premium badge</strong> — displayed on your profile</span>
-        </li>
-      </ul>
-      <a href="#" class="btn-primary" style="display:inline-flex;">Get Premium →</a>
-    </div>
-    <div class="premium-visual">
-      <div class="premium-badge">🌟 Hangear Premium</div>
-      <ul class="premium-features-list">
-        <li>Join events anywhere in the world</li>
-        <li>Host unlimited hangouts per month</li>
-        <li>Your requests are highlighted to hosts</li>
-        <li>Exclusive premium profile badge</li>
-        <li>Cancel anytime in Apple Settings</li>
-      </ul>
     </div>
   </div>
 </section>
